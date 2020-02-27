@@ -56,27 +56,7 @@
     /* ---------------------------------------------- /*
     * Magnific Popup - Init
     /* ---------------------------------------------- */
-
-    $('.simple-ajax-popup').magnificPopup({
-        type: 'image',
-        closeOnContentClick: true,
-        mainClass: 'mfp-fade',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1]
-        },
-        zoom: {
-            enabled: true,
-
-            duration: 300,
-            easing: 'ease-in-out',
-
-            opener: function(openerElement) {
-                return openerElement.is('img') ? openerElement : openerElement.find('img');
-            }
-        }
-    });
+    //$('.kg-image').magnificPopup({type:'image'});
 
     /* ---------------------------------------------- /*
     * Swipper - Init
