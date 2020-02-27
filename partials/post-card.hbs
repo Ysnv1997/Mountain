@@ -1,0 +1,34 @@
+
+<div class="col-md-6">
+    <a href="{{url}}" class="blog-list d-block mb-5 {{post_class}}">
+        <div class="blog-list--img">
+
+            <img class="img-fluid"
+                {{#if feature_image}}
+                    srcset="{{img_url feature_image size="s"}} 300w,
+                            {{img_url feature_image size="m"}} 600w,
+                            {{img_url feature_image size="l"}} 1000w,
+                            {{img_url feature_image size="xl"}} 2000w"
+                    sizes="(max-width: 1000px) 400px, 700px"
+                    {{/if}}
+                    src="{{#if feature_image}}{{img_url feature_image size="m"}}{{else}}{{asset "/images/no-images.jpg"}}{{/if}}"
+                    alt="{{title}}"
+                />
+
+
+
+            <div class="blog-list--details d-flex justify-content-center align-items-center">
+                <div class="blog-list--details-in">
+                    <p class="blog-date text-white"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time></p>
+                    {{#foreach authors}}
+                    <span class="blog-cat">{{name}}</span>
+                    {{/foreach}}
+                </div>
+            </div>
+        </div>
+        <div class="blog-list--desc mt-4">
+            <h3>{{title}}</h3>
+            <p>{{excerpt}}</p>
+        </div>
+    </a>	
+</div>

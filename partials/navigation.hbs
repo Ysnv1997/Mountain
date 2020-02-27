@@ -1,0 +1,19 @@
+<div class="collapse navbar-collapse show" id="navbarCollapse">
+    <div class="about-avatar mb-5">
+        <a href="{{@site.url}}">
+            <img src="{{@site.logo}}" alt="" class="img-fluid mx-auto d-block shadow-sm rounded-full">
+        </a>
+
+        <div class="about-avatar-details mt-4">
+            <h1>{{@site.title}}</h1>
+            <p class="badge">{{@site.description}}</p>
+        </div>
+    </div>
+    <ul class="navbar-nav mx-auto">
+        {{#foreach navigation}}
+        <li class="nav-item {{#if current}} active{{/if}}">
+            <a class="nav-link" href="{{url absolute='true'}}">{{label}}</a>
+        </li>
+        {{/foreach}}
+    </ul>
+</div>

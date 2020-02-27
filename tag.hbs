@@ -1,0 +1,31 @@
+	{{!< default}}
+        {{#tag}}
+            <!-- START: HOME -->		
+            <section class="section-home " id="home">
+                <div class="glass">{{name}}</div>
+                <img src="{{feature_image}}" />
+            </section>	
+    	<!-- END: HOME -->
+        {{/tag}}
+    	<!-- START: BLOG -->
+    	<section class="section section-light">
+    		<div class="container">
+				<div class="section-head">
+                    {{#tag}}
+					<span>{{name}}</span>
+					<h2>{{description}}</h2>
+                    {{/tag}}
+				</div>
+
+				<div class="row">
+					{{#foreach posts}}
+					{{> post-card}}
+					{{/foreach}}
+				</div>
+				<div class="container">
+					{{pagination}}
+					
+				</div>		    				
+			</div>
+    	</section>
+    	<!-- END: BLOG -->

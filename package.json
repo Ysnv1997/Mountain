@@ -1,0 +1,35 @@
+{
+    "name": "shanran",
+    "description": "A brief explanation of your theme",
+    "version": "0.5.0",
+    "engines": {
+        "ghost-api": "v3"
+    },
+    "license": "MIT",
+    "author": {
+        "email": "your@email.here"
+    },
+    "config": {
+        "posts_per_page": 3,
+        "image_sizes": {
+            "xxs": {
+                "width": 30
+            },
+            "xs": {
+                "width": 100
+            },
+            "s": {
+                "width": 300
+            },
+            "m": {
+                "width": 600
+            },
+            "l": {
+                "width": 1000
+            },
+            "xl": {
+                "width": 2000
+            }
+        }
+    }
+}
