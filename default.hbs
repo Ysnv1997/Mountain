@@ -65,9 +65,9 @@
     </div>
 
     <div class="page-wrapper">
-
-        {{{body}}}
-
+		<div id="pjax-container">
+			{{{body}}}
+		</div>
 		<!--START: FOOTER-->
 		<footer class="footer section section-dark">
 			<div class="container">
@@ -81,11 +81,13 @@
 	<!-- JAVASCRIPTS -->
 	
 	<script src="{{asset "/js/vendor.js"}}"></script>
-	<script src="{{asset "/js/colorfulImg.js"}}"></script>
 	<!-- Custom Js -->
 	<script src="{{asset "/js/custom.js"}}"></script>
+	<!-- pjax Js -->
+	<script src="{{asset "/js/jquery.pjax.js"}}"></script>
 	<!-- prism Js -->
 	<script src="{{asset "/js/prism.js"}}"></script>
+	<!-- app Js -->
 	<script src="{{asset "/js/app.js"}}"></script>
 	
 

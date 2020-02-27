@@ -9,7 +9,7 @@
             <p class="badge">{{@site.description}}</p>
         </div>
     </div>
-    <ul class="navbar-nav mx-auto">
+    <ul class="navbar-nav mx-auto" id="navbar-nav">
         {{#foreach navigation}}
         <li class="nav-item {{#if current}} active{{/if}}">
             <a class="nav-link" href="{{url absolute='true'}}">{{label}}</a>

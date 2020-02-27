@@ -22,19 +22,19 @@
     * Section Scroll - Navbar
     /* ---------------------------------------------- */
     
-    $('.navbar-nav a').on('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 0
-        }, 1500, 'easeInOutExpo');
+    // $('.navbar-nav a').on('click', function(event) {
+    //     var $anchor = $(this);
+    //     $('html, body').stop().animate({
+    //         scrollTop: $($anchor.attr('href')).offset().top - 0
+    //     }, 1500, 'easeInOutExpo');
 
-        if($('.navbar').hasClass('active')){
-            $('.navbar').removeClass('active')
-            $('.ham').removeClass('active')
-        }
+    //     if($('.navbar').hasClass('active')){
+    //         $('.navbar').removeClass('active')
+    //         $('.ham').removeClass('active')
+    //     }
 
-        event.preventDefault();
-    });
+    //     event.preventDefault();
+    // });
 
     $('.navbar-toggler').on('click', function(){
         $('html, body').animate({
