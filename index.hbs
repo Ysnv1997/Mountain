@@ -2,7 +2,7 @@
 		<!-- START: HOME -->		
 		<section class="section-home " id="home">
     		<div class="glass">{{@site.title}}</div>
-    		<img src="{{@site.cover_image}}" id="full_img" crossorigin="anonymous"/>
+    		<img src="{{#if @site.cover_image}}{{@site.cover_image}}{{else}}{{asset '/images/banner.jpg'}}{{/if}}" id="full_img" crossorigin="anonymous"/>
     	</section>
     	<!-- END: HOME -->
 
@@ -10,7 +10,7 @@
     	<section class="section section-light">
     		<div class="container">
 				<div class="section-head">
-					<span>MY ARTICLES</span>
+					<span>{{@site.description}}</span>
 					<h2>Blog</h2>
 				</div>
 

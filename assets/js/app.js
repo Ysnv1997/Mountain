@@ -1,7 +1,6 @@
 $(document).ready(function() { 
     function colorfulImg(imgEl){
         var blockSize = 5, // only visit every 5 pixels
-            defaultRGB = {r:0,g:0,b:0}, // for non-supporting envs
             canvas = document.createElement('canvas'),
             context = canvas.getContext && canvas.getContext('2d'),
             data, width, height,
@@ -11,7 +10,7 @@ $(document).ready(function() {
             count = 0
         
         if (!context) {
-            return defaultRGB;
+            return ;
         }
         height = canvas.height = imgEl.naturalHeight || imgEl.offsetHeight || imgEl.height;
         width = canvas.width = imgEl.naturalWidth || imgEl.offsetWidth || imgEl.width;
@@ -19,8 +18,7 @@ $(document).ready(function() {
         try {
             data = context.getImageData(0, 0, width, height);
         } catch(e) {
-            alert('security error, img on diff domain');
-            return defaultRGB;
+            return;
         }
         length = data.data.length;
         while ( (i += blockSize * 4) < length ) {
@@ -62,6 +60,16 @@ $(document).ready(function() {
              })
       }
       
+    //   Valine配置
+    new Valine({
+        el: '#vcomment',
+        appId: 'r5Ex9Rj9hflHjRACQWPk5DJT-gzGzoHsz',
+        appKey: 'y7MryUHGzDTvyBGiWjkV6tyB',
+        placeholder:'ヾﾉ≧∀≦)o来啊，快活啊!',
+        notify: true, // 邮件提醒!!! 默认为 false，启动请参考：https://github.com/xCss/Valine/wiki/Valine-%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E9%82%AE%E4%BB%B6%E6%8F%90%E9%86%92%E8%AE%BE%E7%BD%AE
+        verify: true
+    })
+
     // pjax配置
     // $(document).pjax('a[target!=_blank]', '#pjax-container', {fragment:'#pjax-container', timeout:6000});    
     // $(document).on('pjax:send', function() {

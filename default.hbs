@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{{meta_title page=(t " - 第%页")}}{{#is "post, page"}} – {{@site.title}}{{/is}}</title>
+	<title>{{meta_title page=(t " - 第%页")}}{{#is "post, page"}} – {{@site.title}}{{/is}} - {{@site.description}}</title>
 	<meta name="description" content="Tam - Creative Portfolio Template" />
 	<meta name="keywords" content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard" />
 	<meta name="author" content="beingeorge" />
@@ -87,6 +87,7 @@
 	<script src="{{asset "/js/jquery.pjax.js"}}"></script>
 	<!-- prism Js -->
 	<script src="{{asset "/js/prism.js"}}"></script>
+	<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 	<!-- app Js -->
 	<script src="{{asset "/js/app.js"}}"></script>
 	
