@@ -1,3 +1,4 @@
+"use strict";
 var config = {
     Valine:{
         appId:'r5Ex9Rj9hflHjRACQWPk5DJT-gzGzoHsz',//Valine appId
@@ -7,6 +8,9 @@ var config = {
     },
     GhostApi:'89c0265e233338dbc72e197be4'
 }
+
+
+
 $(document).ready(function() { 
     function colorfulImg(imgEl){
         var blockSize = 5, // only visit every 5 pixels
@@ -43,7 +47,6 @@ $(document).ready(function() {
         return rgb;
     }
     // 根据图片替换网站颜色
-    function public_bg_color() { 
         var full_img = document.getElementById('full_img');
         if(full_img){
             var full_rgb = colorfulImg(full_img),
@@ -54,8 +57,7 @@ $(document).ready(function() {
             linear_gradient = "linear-gradient(135deg, "+rgb+" 0%, "+rgbp+" 100%)"
             $('body').css("background",linear_gradient);
         }
-     }
-     public_bg_color();
+
 
 
     //  重载导航因为pjax失焦事件
@@ -99,7 +101,7 @@ $(document).ready(function() {
         }
     },
     template: function (results) {
-        const time = new Date(results.published_at);
+        const time = parseTime(new Date(results.published_at), '{y}-{m}-{d}');
         return '' +
         '<a href="' + results.url + '" class="ghost-search-item">' +
         '<h2>' + results.title + '</h2>' +
