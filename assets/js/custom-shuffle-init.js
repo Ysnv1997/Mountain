@@ -1,34 +1,33 @@
+var ImageDemo = (function($, imagesLoaded) {
 
-	var ImageDemo = (function($, imagesLoaded) {
+    var $projectsContainer = $('.list-items-container'),
+        $imgs = $projectsContainer.find('img'),
+        imgLoad,
 
-	var $projectsContainer = $('.list-items-container'),
-		$imgs = $projectsContainer.find('img'),
-		imgLoad,
+        init = function() {
+            imgLoad = new imagesLoaded($imgs.get());
+            imgLoad.on('always', onAllImagesFinished);
+        },
 
-	init = function() {
-		imgLoad = new imagesLoaded($imgs.get());
-		imgLoad.on('always', onAllImagesFinished);
-	},
+        onAllImagesFinished = function(instance) {
 
-	onAllImagesFinished = function(instance) {
+            // Adds visibility: visible;
+            $projectsContainer.addClass('images-loaded');
 
-		// Adds visibility: visible;
-		$projectsContainer.addClass('images-loaded');
+            // Initialize shuffle
+            $projectsContainer.shuffle({
+                itemSelector: '.list-item',
+                delimeter: ' '
+            });
 
-		// Initialize shuffle
-		$projectsContainer.shuffle({
-			itemSelector: '.list-item',
-			delimeter: ' '
-		});
+        };
 
-	};
+    return {
+        init: init
+    };
 
-	return {
-		init: init
-	};
+}(jQuery, window.imagesLoaded));
 
-	}( jQuery, window.imagesLoaded ));
-
-	$(document).ready(function() {
-		ImageDemo.init();
-	});
+$(document).ready(function() {
+    ImageDemo.init();
+});

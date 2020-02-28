@@ -1,539 +1,678 @@
 /* post style */
+
 .post-content {
-	width: 100%
+    width: 100%
 }
 
 .post-content.borderbox {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
 }
 
-.post-content article,.post-content aside,.post-content blockquote,.post-content button,.post-content code,.post-content dd,.post-content details,.post-content dl,.post-content dt,.post-content fieldset,.post-content figcaption,.post-content figure,.post-content footer,.post-content form,.post-content h1,.post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6,.post-content header,.post-content hr,.post-content input,.post-content legend,.post-content li,.post-content menu,.post-content nav,.post-content ol,.post-content p,.post-content pre,.post-content section,.post-content td,.post-content textarea,.post-content th,.post-content ul {
-	margin: 0;
-	padding: 0
+.post-content article,
+.post-content aside,
+.post-content blockquote,
+.post-content button,
+.post-content code,
+.post-content dd,
+.post-content details,
+.post-content dl,
+.post-content dt,
+.post-content fieldset,
+.post-content figcaption,
+.post-content figure,
+.post-content footer,
+.post-content form,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6,
+.post-content header,
+.post-content hr,
+.post-content input,
+.post-content legend,
+.post-content li,
+.post-content menu,
+.post-content nav,
+.post-content ol,
+.post-content p,
+.post-content pre,
+.post-content section,
+.post-content td,
+.post-content textarea,
+.post-content th,
+.post-content ul {
+    margin: 0;
+    padding: 0
 }
 
-.post-content article,.post-content aside,.post-content details,.post-content figcaption,.post-content figure,.post-content footer,.post-content header,.post-content menu,.post-content nav,.post-content section {
-	display: block
+.post-content article,
+.post-content aside,
+.post-content details,
+.post-content figcaption,
+.post-content figure,
+.post-content footer,
+.post-content header,
+.post-content menu,
+.post-content nav,
+.post-content section {
+    display: block
 }
 
-.post-content audio,.post-content canvas,.post-content video {
-	display: inline-block
+.post-content audio,
+.post-content canvas,
+.post-content video {
+    display: inline-block
 }
 
-.post-content button,.post-content input,.post-content select,.post-content textarea {
-	font: 300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif
+.post-content button,
+.post-content input,
+.post-content select,
+.post-content textarea {
+    font: 300 1em/1.8 PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif
 }
 
-.post-content button::-moz-focus-inner,.post-content input::-moz-focus-inner {
-	padding: 0;
-	border: 0
+.post-content button::-moz-focus-inner,
+.post-content input::-moz-focus-inner {
+    padding: 0;
+    border: 0
 }
 
 .post-content table {
-	border-collapse: collapse;
-	border-spacing: 0
+    border-collapse: collapse;
+    border-spacing: 0
 }
 
-.post-content fieldset,.post-content img {
-	border: 0
+.post-content fieldset,
+.post-content img {
+    border: 0
 }
 
 .post-content blockquote {
-	position: relative;
-	color: #999;
-	font-weight: 400;
-	font-size: 90%;
-	border-left: 4px solid #1abc9c;
-	background-color: rgba(26,186,154,.05);
-	padding: .725rem 1rem
+    position: relative;
+    color: #999;
+    font-weight: 400;
+    font-size: 90%;
+    border-left: 4px solid #1abc9c;
+    background-color: rgba(26, 186, 154, .05);
+    padding: .725rem 1rem
 }
 
 .post-content blockquote p {
-	margin-bottom: 0
+    margin-bottom: 0
 }
 
 @media only screen and (max-width:640px) {
-	.post-content blockquote {
-		margin: 1em 0
-	}
+    .post-content blockquote {
+        margin: 1em 0
+    }
 }
 
-.post-content abbr,.post-content acronym {
-	border-bottom: 1px dotted;
-	font-variant: normal;
-	text-decoration: none
+.post-content abbr,
+.post-content acronym {
+    border-bottom: 1px dotted;
+    font-variant: normal;
+    text-decoration: none
 }
 
 .post-content abbr {
-	cursor: help
+    cursor: help
 }
 
 .post-content del {
-	text-decoration: line-through
+    text-decoration: line-through
 }
 
-.post-content address,.post-content caption,.post-content cite,.post-content code,.post-content dfn,.post-content em,.post-content th,.post-content var {
-	font-style: normal;
-	font-weight: 400
+.post-content address,
+.post-content caption,
+.post-content cite,
+.post-content code,
+.post-content dfn,
+.post-content em,
+.post-content th,
+.post-content var {
+    font-style: normal;
+    font-weight: 400
 }
 
-.post-content ol,.post-content ul {
-	list-style: none
+.post-content ol,
+.post-content ul {
+    list-style: none
 }
 
-.post-content caption,.post-content th {
-	text-align: left
+.post-content caption,
+.post-content th {
+    text-align: left
 }
 
-.post-content q:after,.post-content q:before {
-	content: ""
+.post-content q:after,
+.post-content q:before {
+    content: ""
 }
 
-.post-content sub,.post-content sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative
+.post-content sub,
+.post-content sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative
 }
 
-.post-content :root sub,.post-content :root sup {
-	vertical-align: baseline
+.post-content :root sub,
+.post-content :root sup {
+    vertical-align: baseline
 }
 
 .post-content sup {
-	top: -.5em
+    top: -.5em
 }
 
 .post-content sub {
-	bottom: -.25em
+    bottom: -.25em
 }
 
 .post-content a {
-	color: #1abc9c;
-	-webkit-transition: all .5s ease 0ms;
-	transition: all .5s ease 0ms
+    color: #1abc9c;
+    -webkit-transition: all .5s ease 0ms;
+    transition: all .5s ease 0ms
 }
 
 .post-content a:hover {
-	color: #555;
-	text-decoration: underline
+    color: #555;
+    text-decoration: underline
 }
 
-.post-content a,.post-content ins {
-	text-decoration: none
+.post-content a,
+.post-content ins {
+    text-decoration: none
 }
 
 .post-content u {
-	text-decoration: underline
+    text-decoration: underline
 }
 
 .post-content mark {
-	background: #fffdd1;
-	border-bottom: 1px solid #ffedce;
-	padding: 2px;
-	margin: 0 5px
+    background: #fffdd1;
+    border-bottom: 1px solid #ffedce;
+    padding: 2px;
+    margin: 0 5px
 }
 
-.post-content code,.post-content pre,.post-content pre tt {
-	font-family: Courier,Courier New,monospace
+.post-content code,
+.post-content pre,
+.post-content pre tt {
+    font-family: Courier, Courier New, monospace
 }
 
 .post-content pre {
-	display: block;
-	padding: 1rem 0;
-	overflow-scrolling: touch;
-	-webkit-overflow-scrolling: touch
+    display: block;
+    padding: 1rem 0;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch
 }
 
 .post-content pre .pre-block-loading {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	background-color: #f2f2f2
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #f2f2f2
 }
 
 .post-content pre .pre-block-loading .loading-icon {
-	text-shadow: none
+    text-shadow: none
 }
 
-.post-content pre .pre-block-loading .loading-icon svg path,.post-content pre .pre-block-loading .loading-icon svg rect {
-	fill: #212529
+.post-content pre .pre-block-loading .loading-icon svg path,
+.post-content pre .pre-block-loading .loading-icon svg rect {
+    fill: #212529
 }
 
 .post-content pre .pre-block-loading .loading-text {
-	font-size: .725rem;
-	color: #212529
+    font-size: .725rem;
+    color: #212529
 }
 
 .post-content hr {
-	border: none;
-	border-bottom: 1px solid #cfcfcf;
-	margin-bottom: .8em;
-	height: 10px
+    border: none;
+    border-bottom: 1px solid #cfcfcf;
+    margin-bottom: .8em;
+    height: 10px
 }
 
-.post-content figcaption,.post-content small {
-	font-size: .9em;
-	color: #888
+.post-content figcaption,
+.post-content small {
+    font-size: .9em;
+    color: #888
 }
 
-.post-content b,.post-content strong {
-	font-weight: 700
+.post-content b,
+.post-content strong {
+    font-weight: 700
 }
 
 .post-content [draggable] {
-	cursor: move
+    cursor: move
 }
 
-.post-content .clearfix:after,.post-content .clearfix:before {
-	content: "";
-	display: table
+.post-content .clearfix:after,
+.post-content .clearfix:before {
+    content: "";
+    display: table
 }
 
 .post-content .clearfix:after {
-	clear: both
+    clear: both
 }
 
 .post-content .clearfix {
-	zoom: 1
+    zoom: 1
 }
 
-.post-content .textwrap,.post-content .textwrap td,.post-content .textwrap th {
-	word-wrap: break-word;
-	word-break: break-all
+.post-content .textwrap,
+.post-content .textwrap td,
+.post-content .textwrap th {
+    word-wrap: break-word;
+    word-break: break-all
 }
 
 .post-content .textwrap-table {
-	table-layout: fixed
+    table-layout: fixed
 }
 
 .post-content .serif {
-	font-family: Palatino,Optima,Georgia,serif
+    font-family: Palatino, Optima, Georgia, serif
 }
 
-.post-content blockquote,.post-content dl,.post-content form,.post-content hr,.post-content ol,.post-content p,.post-content pre,.post-content table,.post-content ul {
-	margin-bottom: 1.2em
+.post-content blockquote,
+.post-content dl,
+.post-content form,
+.post-content hr,
+.post-content ol,
+.post-content p,
+.post-content pre,
+.post-content table,
+.post-content ul {
+    margin-bottom: 1.2em
 }
 
-.post-content h1,.post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6 {
-	font-family: PingFang SC,Verdana,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;
-	font-weight: 500;
-	margin-top: 1.2em;
-	margin-bottom: .6em;
-	line-height: 1.35
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+    font-weight: 500;
+    margin-top: 1.2em;
+    margin-bottom: .6em;
+    line-height: 1.35
 }
 
-.post-content h1:before,.post-content h2:before,.post-content h3:before,.post-content h4:before,.post-content h5:before,.post-content h6:before {
-	content: "#";
-	margin-right: .175rem;
-	font-size: 90%;
-	font-weight: 700;
-	color: #1abc9c
+.post-content h1:before,
+.post-content h2:before,
+.post-content h3:before,
+.post-content h4:before,
+.post-content h5:before,
+.post-content h6:before {
+    content: "#";
+    margin-right: .175rem;
+    font-size: 90%;
+    font-weight: 700;
+    color: #1abc9c
 }
 
 .post-content h1 {
-	font-size: 2em
+    font-size: 2em
 }
 
 .post-content h2 {
-	font-size: 1.8em
+    font-size: 1.8em
 }
 
 .post-content h3 {
-	font-size: 1.6em
+    font-size: 1.6em
 }
 
 .post-content h4 {
-	font-size: 1.4em
+    font-size: 1.4em
 }
 
-.post-content h5,.post-content h6 {
-	font-size: 1.2em
+.post-content h5,
+.post-content h6 {
+    font-size: 1.2em
 }
 
 .post-content ul {
-	margin-left: 1.3em;
-	list-style: disc
+    margin-left: 1.3em;
+    list-style: disc
 }
 
 .post-content ol {
-	list-style: decimal;
-	margin-left: 1.9em
+    list-style: decimal;
+    margin-left: 1.9em
 }
 
-.post-content li ol,.post-content li ul {
-	margin-bottom: .8em;
-	margin-left: 2em
+.post-content li ol,
+.post-content li ul {
+    margin-bottom: .8em;
+    margin-left: 2em
 }
 
 .post-content li ul {
-	list-style: circle
+    list-style: circle
 }
 
 .post-content table {
-	margin: 0 auto 1.2rem;
-	width: 95%
+    margin: 0 auto 1.2rem;
+    width: 95%
 }
 
-.post-content table caption,.post-content table td,.post-content table th {
-	border: 1px solid #ddd;
-	padding: .5em;
-	color: #666;
-	text-align: center
+.post-content table caption,
+.post-content table td,
+.post-content table th {
+    border: 1px solid #ddd;
+    padding: .5em;
+    color: #666;
+    text-align: center
 }
 
 .post-content table th {
-	background: #fbfbfb
+    background: #fbfbfb
 }
 
 .post-content table thead th {
-	background: #f1f1f1
+    background: #f1f1f1
 }
 
 .post-content table caption {
-	border-bottom: none
+    border-bottom: none
 }
 
-.post-content caption,.post-content em,.post-content legend {
-	font-weight: inherit
+.post-content caption,
+.post-content em,
+.post-content legend {
+    font-weight: inherit
 }
 
 .post-content p a {
-	word-break: break-word;
-	overflow-wrap: break-word
-}
-.post-content img,
-.post-content p img {
-	position: relative;
-	max-width: 100%;
-	display: block;
-	margin: 1.5em auto;
-	height: auto
+    word-break: break-word;
+    overflow-wrap: break-word
 }
 
-.post-content.mobile-content>h1,.post-content.mobile-content>h2,.post-content.mobile-content>h3,.post-content.mobile-content>h4,.post-content.mobile-content>h5,.post-content.mobile-content>h6,.post-content.mobile-content>p,.post-content.mobile-content>ul {
-	padding-left: 1rem;
-	padding-right: 1rem
+.post-content img,
+.post-content p img {
+    position: relative;
+    max-width: 100%;
+    display: block;
+    margin: 1.5em auto;
+    height: auto
+}
+
+.post-content.mobile-content>h1,
+.post-content.mobile-content>h2,
+.post-content.mobile-content>h3,
+.post-content.mobile-content>h4,
+.post-content.mobile-content>h5,
+.post-content.mobile-content>h6,
+.post-content.mobile-content>p,
+.post-content.mobile-content>ul {
+    padding-left: 1rem;
+    padding-right: 1rem
 }
 
 .post-content.mobile-content>blockquote {
-	margin-left: 1rem;
-	margin-right: 1rem
+    margin-left: 1rem;
+    margin-right: 1rem
 }
 
 @media (prefers-color-scheme:dark) {
-	.post-content a {
-		color: #1abc9c;
-		-webkit-transition: all .5s ease 0ms;
-		transition: all .5s ease 0ms
-	}
-
-	.post-content a:hover {
-		color: hsla(0,0%,100%,.8);
-		text-decoration: underline
-	}
-
-	.post-content table caption,.post-content table td,.post-content table th {
-		border: 1px solid hsla(0,0%,100%,.5);
-		color: hsla(0,0%,100%,.5)
-	}
-
-	.post-content pre .pre-block-loading {
-		background-color: #212a2e
-	}
-
-	.post-content pre .pre-block-loading .loading-icon svg path,.post-content pre .pre-block-loading .loading-icon svg rect {
-		fill: hsla(0,0%,100%,.5)
-	}
-
-	.post-content pre .pre-block-loading .loading-text {
-		color: hsla(0,0%,100%,.5)
-	}
-
-	.post-content table th,.post-content table thead th {
-		background: #000
-	}
-
-	.post-content hr {
-		border-bottom: 1px solid hsla(0,0%,100%,.5)
-	}
-
-	.post-content p img {
-		-webkit-filter: brightness(50%);
-		filter: brightness(50%)
-	}
-}[data-theme=dark] .post-content a {
-	color: #1abc9c;
-	-webkit-transition: all .5s ease 0ms;
-	transition: all .5s ease 0ms
-}[data-theme=dark] .post-content a:hover {
-	color: hsla(0,0%,100%,.8);
-	text-decoration: underline
-}[data-theme=dark] .post-content table caption,[data-theme=dark] .post-content table td,[data-theme=dark] .post-content table th {
-	border: 1px solid hsla(0,0%,100%,.5);
-	color: hsla(0,0%,100%,.5)
-}[data-theme=dark] .post-content pre .pre-block-loading {
-	background-color: #212a2e
-}[data-theme=dark] .post-content pre .pre-block-loading .loading-icon svg path,[data-theme=dark] .post-content pre .pre-block-loading .loading-icon svg rect {
-	fill: hsla(0,0%,100%,.5)
-}[data-theme=dark] .post-content pre .pre-block-loading .loading-text {
-	color: hsla(0,0%,100%,.5)
-}[data-theme=dark] .post-content table th,[data-theme=dark] .post-content table thead th {
-	background: #000
-}[data-theme=dark] .post-content hr {
-	border-bottom: 1px solid hsla(0,0%,100%,.5)
-}[data-theme=dark] .post-content p img {
-	-webkit-filter: brightness(50%);
-	filter: brightness(50%)
+    .post-content a {
+        color: #1abc9c;
+        -webkit-transition: all .5s ease 0ms;
+        transition: all .5s ease 0ms
+    }
+    .post-content a:hover {
+        color: hsla(0, 0%, 100%, .8);
+        text-decoration: underline
+    }
+    .post-content table caption,
+    .post-content table td,
+    .post-content table th {
+        border: 1px solid hsla(0, 0%, 100%, .5);
+        color: hsla(0, 0%, 100%, .5)
+    }
+    .post-content pre .pre-block-loading {
+        background-color: #212a2e
+    }
+    .post-content pre .pre-block-loading .loading-icon svg path,
+    .post-content pre .pre-block-loading .loading-icon svg rect {
+        fill: hsla(0, 0%, 100%, .5)
+    }
+    .post-content pre .pre-block-loading .loading-text {
+        color: hsla(0, 0%, 100%, .5)
+    }
+    .post-content table th,
+    .post-content table thead th {
+        background: #000
+    }
+    .post-content hr {
+        border-bottom: 1px solid hsla(0, 0%, 100%, .5)
+    }
+    .post-content p img {
+        -webkit-filter: brightness(50%);
+        filter: brightness(50%)
+    }
 }
-.kg-card img{
-	margin-bottom: 0;
+
+[data-theme=dark] .post-content a {
+    color: #1abc9c;
+    -webkit-transition: all .5s ease 0ms;
+    transition: all .5s ease 0ms
 }
-.kg-card figcaption{
-	color: #c1c0c0;
-	text-align: center;
+
+[data-theme=dark] .post-content a:hover {
+    color: hsla(0, 0%, 100%, .8);
+    text-decoration: underline
 }
+
+[data-theme=dark] .post-content table caption,
+[data-theme=dark] .post-content table td,
+[data-theme=dark] .post-content table th {
+    border: 1px solid hsla(0, 0%, 100%, .5);
+    color: hsla(0, 0%, 100%, .5)
+}
+
+[data-theme=dark] .post-content pre .pre-block-loading {
+    background-color: #212a2e
+}
+
+[data-theme=dark] .post-content pre .pre-block-loading .loading-icon svg path,
+[data-theme=dark] .post-content pre .pre-block-loading .loading-icon svg rect {
+    fill: hsla(0, 0%, 100%, .5)
+}
+
+[data-theme=dark] .post-content pre .pre-block-loading .loading-text {
+    color: hsla(0, 0%, 100%, .5)
+}
+
+[data-theme=dark] .post-content table th,
+[data-theme=dark] .post-content table thead th {
+    background: #000
+}
+
+[data-theme=dark] .post-content hr {
+    border-bottom: 1px solid hsla(0, 0%, 100%, .5)
+}
+
+[data-theme=dark] .post-content p img {
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%)
+}
+
+.kg-card img {
+    margin-bottom: 0;
+}
+
+.kg-card figcaption {
+    color: #c1c0c0;
+    text-align: center;
+}
+
+
 /* 搜样式 */
-.search-wrapper-look{
-	display: block !important;
-	transition: transform 400ms;
+
+.search-wrapper-look {
+    display: block !important;
+    transition: transform 400ms;
 }
+
 .site-wrapper .search-wrapper {
-	transition: transform 400ms;
-	display: none;
-	position: fixed;
-	top: 0;
-	right: 0;
-	background-color: #fff;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-box-shadow: -5px 0 5px 0 rgba(0,0,0,.15);
-	box-shadow: -5px 0 5px 0 rgba(0,0,0,.15);
-	z-index: 1080
+    transition: transform 400ms;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-shadow: -5px 0 5px 0 rgba(0, 0, 0, .15);
+    box-shadow: -5px 0 5px 0 rgba(0, 0, 0, .15);
+    z-index: 1080
 }
 
 .site-wrapper .search-wrapper .search-close {
-	font-size: 3rem;
-	outline: none
+    font-size: 3rem;
+    outline: none
 }
 
 .site-wrapper .search-wrapper .search-content {
-	-webkit-box-flex: 1;
-	-ms-flex: 1 0 auto;
-	flex: 1 0 auto;
-	width: 100%;
-	margin: 2.5rem auto;
-	padding: 5rem 1rem
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    width: 100%;
+    margin: 2.5rem auto;
+    padding: 5rem 1rem
 }
 
 .site-wrapper .search-wrapper .search-content .search-form {
-	position: relative
+    position: relative
 }
 
 .site-wrapper .search-wrapper .search-content .search-form .search-icon {
-	position: absolute;
-	top: .6rem;
-	left: .5rem;
-	font-size: 1.5rem;
-	color: #777
+    position: absolute;
+    top: .6rem;
+    left: .5rem;
+    font-size: 1.5rem;
+    color: #777
 }
 
 .site-wrapper .search-wrapper .search-content .search-form label {
-	width: 100%
+    width: 100%
 }
 
 .site-wrapper .search-wrapper .search-content .search-form label .search-input {
-	font-size: 1.5rem;
-	font-weight: 700;
-	display: block;
-	width: 100%;
-	height: 3rem;
-	padding: 0 0 .1875rem 2.5rem;
-	-webkit-transition: border-color .3s ease;
-	transition: border-color .3s ease;
-	color: #333;
-	border: solid #999;
-	border-width: 0 0 6px;
-	border-radius: 0;
-	outline: 0;
-	-webkit-box-flex: 0;
-	-ms-flex: 0 0 100%;
-	flex: 0 0 100%
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    height: 3rem;
+    padding: 0 0 .1875rem 2.5rem;
+    -webkit-transition: border-color .3s ease;
+    transition: border-color .3s ease;
+    color: #333;
+    border: solid #999;
+    border-width: 0 0 6px;
+    border-radius: 0;
+    outline: 0;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%
 }
 
 .site-wrapper .search-wrapper .search-content .search-meta {
-	font-size: .6875rem;
-	font-weight: 700;
-	display: block;
-	width: 100%;
-	margin: 0 auto;
-	padding: .9375rem 0;
-	text-align: left;
-	text-transform: uppercase;
-	color: #333
+    font-size: .6875rem;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: .9375rem 0;
+    text-align: left;
+    text-transform: uppercase;
+    color: #333
 }
 
 .site-wrapper .search-wrapper .search-content .search-results {
-	overflow: auto;
-	height: 100vh;
-	padding-bottom: 14rem
+    overflow: auto;
+    height: 100vh;
+    padding-bottom: 14rem
 }
 
 .site-wrapper .search-wrapper .search-content .search-results .ghost-search-item {
-	margin: .9375rem 0 1.875rem;
-	display: block;
-	cursor: pointer
+    margin: .9375rem 0 1.875rem;
+    display: block;
+    cursor: pointer
 }
 
 .site-wrapper .search-wrapper .search-content .search-results .ghost-search-item h2 {
-	font-size: 1.25rem;
-	color: #333;
-	margin-bottom: .625rem
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: .625rem
 }
 
 .site-wrapper .search-wrapper .search-content .search-results .ghost-search-item span {
-	font-size: .8125rem;
-	color: #777;
-	font-weight: 700
+    font-size: .8125rem;
+    color: #777;
+    font-weight: 700
 }
 
 @media (prefers-color-scheme:dark) {
-	.site-wrapper .search-wrapper {
-		background-color: #263238
-	}
+    .site-wrapper .search-wrapper {
+        background-color: #263238
+    }
+    .site-wrapper .search-wrapper .search-close {
+        color: hsla(0, 0%, 100%, .5);
+        text-shadow: none
+    }
+    .site-wrapper .search-wrapper .search-content .search-form .search-icon {
+        color: hsla(0, 0%, 100%, .5)
+    }
+    .site-wrapper .search-wrapper .search-content .search-form label .search-input {
+        color: hsla(0, 0%, 100%, .5);
+        border-color: hsla(0, 0%, 100%, .5);
+        background-color: #263238
+    }
+    .site-wrapper .search-wrapper .search-content .search-meta,
+    .site-wrapper .search-wrapper .search-content .search-results .ghost-search-item h2,
+    .site-wrapper .search-wrapper .search-content .search-results .ghost-search-item span {
+        color: hsla(0, 0%, 100%, .5)
+    }
+}
 
-	.site-wrapper .search-wrapper .search-close {
-		color: hsla(0,0%,100%,.5);
-		text-shadow: none
-	}
+[data-theme=dark] .site-wrapper .search-wrapper {
+    background-color: #263238
+}
 
-	.site-wrapper .search-wrapper .search-content .search-form .search-icon {
-		color: hsla(0,0%,100%,.5)
-	}
+[data-theme=dark] .site-wrapper .search-wrapper .search-close {
+    color: hsla(0, 0%, 100%, .5);
+    text-shadow: none
+}
 
-	.site-wrapper .search-wrapper .search-content .search-form label .search-input {
-		color: hsla(0,0%,100%,.5);
-		border-color: hsla(0,0%,100%,.5);
-		background-color: #263238
-	}
+[data-theme=dark] .site-wrapper .search-wrapper .search-content .search-form .search-icon {
+    color: hsla(0, 0%, 100%, .5)
+}
 
-	.site-wrapper .search-wrapper .search-content .search-meta,.site-wrapper .search-wrapper .search-content .search-results .ghost-search-item h2,.site-wrapper .search-wrapper .search-content .search-results .ghost-search-item span {
-		color: hsla(0,0%,100%,.5)
-	}
-}[data-theme=dark] .site-wrapper .search-wrapper {
-	background-color: #263238
-}[data-theme=dark] .site-wrapper .search-wrapper .search-close {
-	color: hsla(0,0%,100%,.5);
-	text-shadow: none
-}[data-theme=dark] .site-wrapper .search-wrapper .search-content .search-form .search-icon {
-	color: hsla(0,0%,100%,.5)
-}[data-theme=dark] .site-wrapper .search-wrapper .search-content .search-form label .search-input {
-	color: hsla(0,0%,100%,.5);
-	border-color: hsla(0,0%,100%,.5);
-	background-color: #263238
-}[data-theme=dark] .site-wrapper .search-wrapper .search-content .search-meta,[data-theme=dark] .site-wrapper .search-wrapper .search-content .search-results .ghost-search-item h2,[data-theme=dark] .site-wrapper .search-wrapper .search-content .search-results .ghost-search-item span {
-	color: hsla(0,0%,100%,.5)
+[data-theme=dark] .site-wrapper .search-wrapper .search-content .search-form label .search-input {
+    color: hsla(0, 0%, 100%, .5);
+    border-color: hsla(0, 0%, 100%, .5);
+    background-color: #263238
+}
+
+[data-theme=dark] .site-wrapper .search-wrapper .search-content .search-meta,
+[data-theme=dark] .site-wrapper .search-wrapper .search-content .search-results .ghost-search-item h2,
+[data-theme=dark] .site-wrapper .search-wrapper .search-content .search-results .ghost-search-item span {
+    color: hsla(0, 0%, 100%, .5)
 }

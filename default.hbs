@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{{meta_title page=(t " - 第%页")}}{{#is "post, page"}} – {{@site.title}}{{/is}} - {{@site.description}}</title>
 	<meta name="description" content="Tam - Creative Portfolio Template" />
-	<meta name="keywords" content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard" />
+	<meta name="keywords"
+		content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard" />
 	<meta name="author" content="beingeorge" />
 	<meta name="theme-color" content="#2a2d35">
 
 	<!-- Vendor Css-->
-	<link rel="stylesheet" href="{{asset '/css/vendor.css'}}" />	
-	<link rel="stylesheet" href="{{asset '/css/lineicons.min.css'}}" />	
-	
+	<link rel="stylesheet" href="{{asset '/css/vendor.css'}}" />
+	<link rel="stylesheet" href="{{asset '/css/lineicons.min.css'}}" />
+
 	<!-- TamTemplate style Css -->
 	<link href="{{asset '/css/tam.css'}}" rel="stylesheet">
 	<!-- prism style Css -->
@@ -41,30 +43,32 @@
 
 			<div class="navbar-toggler">
 				<svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60">
-				  <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-				  <path class="line middle" d="m 30,50 h 40" />
-				  <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+					<path class="line top"
+						d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+					<path class="line middle" d="m 30,50 h 40" />
+					<path class="line bottom"
+						d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
 				</svg>
 			</div>
 
 			<nav class="navbar text-center align-items-center justify-content-center">
 
 
-                {{navigation}}
-                {{> site-sidebar-footer}}
+				{{navigation}}
+				{{> site-sidebar-footer}}
 
-	        </nav>
-        </div>
-        <!-- END: NAVBAR -->
-    </aside>
-    <!-- START: Aside -->
+			</nav>
+		</div>
+		<!-- END: NAVBAR -->
+	</aside>
+	<!-- START: Aside -->
 
-    <div class="page-overlay">
-    	<span class="overlay-1"></span>
-    	<span class="overlay-2"></span>
-    </div>
+	<div class="page-overlay">
+		<span class="overlay-1"></span>
+		<span class="overlay-2"></span>
+	</div>
 
-    <div class="page-wrapper">
+	<div class="page-wrapper">
 		<div id="pjax-container">
 			{{{body}}}
 		</div>
@@ -82,7 +86,7 @@
 
 
 	<!-- JAVASCRIPTS -->
-	
+
 	<script src="{{asset "/js/vendor.js"}}"></script>
 	<!-- Custom Js -->
 	<script src="{{asset "/js/custom.js"}}"></script>
@@ -93,11 +97,12 @@
 	<!-- Valine Js -->
 	<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 	<!-- search Js -->
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@tryghost/content-api@1.3.7/umd/content-api.min.js"></script>
+	<script type="text/javascript"
+		src="https://cdn.jsdelivr.net/npm/@tryghost/content-api@1.3.7/umd/content-api.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/ghost-search@1.0.1/dist/ghost-search.min.js"></script>
 	<!-- app Js -->
 	<script src="{{asset "/js/app.js"}}"></script>
-	
+
 
 	{{!-- 用户自定义脚本 --}}
 	{{{block "scripts"}}}
@@ -105,4 +110,5 @@
 	{{!-- Ghost 页脚信息 --}}
 	{{ghost_foot}}
 </body>
+
 </html>

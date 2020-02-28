@@ -1,30 +1,30 @@
-	{{!< default}}
-        {{#author}}
-            <!-- START: HOME -->		
-            <section class="section-home " id="home">
-                <div class="glass">{{name}}</div>
-                <img src="{{#if cover_image}}{{cover_image}}{{else}}{{asset '/images/banner.jpg'}}{{/if}}" id='full_img'/>
-            </section>	
-            {{/author}}
-    	<!-- START: BLOG -->
-    	<section class="section section-light">
-    		<div class="container">
-				<div class="section-head">
-                    {{#author}}
-					<span>{{location}}</span>
-					<h2>{{name}}</h2>
-                    {{/author}}
-				</div>
+{{!< default}}
+{{#author}}
+<!-- START: HOME -->
+<section class="section-home " id="home">
+	<div class="glass">{{name}}</div>
+	<img src="{{#if cover_image}}{{cover_image}}{{else}}{{asset '/images/banner.jpg'}}{{/if}}" id='full_img' />
+</section>
+{{/author}}
+<!-- START: BLOG -->
+<section class="section section-light">
+	<div class="container">
+		<div class="section-head">
+			{{#author}}
+			<span>{{location}}</span>
+			<h2>{{name}}</h2>
+			{{/author}}
+		</div>
 
-				<div class="row">
-					{{#foreach posts}}
-					{{> post-card}}
-					{{/foreach}}
-				</div>
-				<div class="container">
-					{{pagination}}
-					
-				</div>		    				
-			</div>
-    	</section>
-    	<!-- END: BLOG -->
+		<div class="row">
+			{{#foreach posts}}
+			{{> post-card}}
+			{{/foreach}}
+		</div>
+		<div class="container">
+			{{pagination}}
+
+		</div>
+	</div>
+</section>
+<!-- END: BLOG -->

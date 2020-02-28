@@ -1,28 +1,29 @@
-	{{!< default}}
-		<!-- START: HOME -->		
-		<section class="section-home " id="home">
-    		<div class="glass">{{@site.title}}</div>
-    		<img src="{{#if @site.cover_image}}{{@site.cover_image}}{{else}}{{asset '/images/banner.jpg'}}{{/if}}" id="full_img" crossorigin="anonymous"/>
-    	</section>
-    	<!-- END: HOME -->
+{{!< default}}
+<!-- START: HOME -->
+<section class="section-home " id="home">
+	<div class="glass">{{@site.title}}</div>
+	<img src="{{#if @site.cover_image}}{{@site.cover_image}}{{else}}{{asset '/images/banner.jpg'}}{{/if}}" id="full_img"
+		crossorigin="anonymous" />
+</section>
+<!-- END: HOME -->
 
-    	<!-- START: BLOG -->
-    	<section class="section section-light">
-    		<div class="container">
-				<div class="section-head">
-					<span>{{@site.description}}</span>
-					<h2>Blog</h2>
-				</div>
+<!-- START: BLOG -->
+<section class="section section-light">
+	<div class="container">
+		<div class="section-head">
+			<span>{{@site.description}}</span>
+			<h2>Blog</h2>
+		</div>
 
-				<div class="row">
-					{{#foreach posts}}
-					{{> post-card}}
-					{{/foreach}}
-				</div>
-				<div class="container">
-					{{pagination}}
-					
-				</div>		    				
-			</div>
-    	</section>
-    	<!-- END: BLOG -->
+		<div class="row">
+			{{#foreach posts}}
+			{{> post-card}}
+			{{/foreach}}
+		</div>
+		<div class="container">
+			{{pagination}}
+
+		</div>
+	</div>
+</section>
+<!-- END: BLOG -->
