@@ -42,9 +42,20 @@
         });
         $("body").toggleClass('aside-open');
         $(".ham").toggleClass('active');
+        $('.search-wrapper').removeClass('search-wrapper-look')
         $("body, html").toggleClass('overflow-hidden');
     });
-
+    /* ---------------------------------------------- /*
+    * search - onclick
+    /* ---------------------------------------------- */
+    $('#search-toggler').on('click',function () { 
+        $('.search-wrapper').toggleClass('search-wrapper-look')
+        return false
+     })
+     $('.click-search-close').on('click',function () { 
+        $('.search-wrapper').removeClass('search-wrapper-look')
+        return false
+     })
     /* ---------------------------------------------- /*
     * Scroll Spy - init
     /* ---------------------------------------------- */
@@ -136,6 +147,7 @@
             $('.swiper-slide').parallax('50%', -0.3);
         }        
     }
+
 
 }(window.jQuery);
 
