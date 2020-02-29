@@ -20,9 +20,9 @@
             <div class="blog-list--details d-flex justify-content-center align-items-center">
                 <div class="blog-list--details-in">
                     <p class="blog-date text-white"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time></p>
-                    {{#foreach authors}}
-                    <span class="blog-cat">{{name}}</span>
-                    {{/foreach}}
+                    
+                    <span class="blog-cat">{{#primary_tag}}<span>{{name}}</span>{{/primary_tag}}</span>
+                    
                 </div>
             </div>
         </div>

@@ -2,7 +2,10 @@
 {{#author}}
 <!-- START: HOME -->
 <section class="section-home " id="home">
-	<div class="glass">{{name}}</div>
+	<div class="glass">
+		<h3>{{name}}</h3>
+		
+		</div>
 	<img src="{{#if cover_image}}{{cover_image}}{{else}}{{asset '/images/banner.jpg'}}{{/if}}" id='full_img' />
 </section>
 {{/author}}

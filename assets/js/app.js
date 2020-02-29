@@ -6,7 +6,7 @@ var config = {
         notify: false, // 邮件提醒!!! 默认为 false，启动请参考：https://github.com/xCss/Valine/wiki/Valine-%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E9%82%AE%E4%BB%B6%E6%8F%90%E9%86%92%E8%AE%BE%E7%BD%AE
         verify: false //是否开启评论验证码
     },
-    GhostApi: '89c0265e233338dbc72e197be4'
+    GhostApi: '91c34e137ab452d7836f7fe976'
 }
 
 $(document).ready(function() {
@@ -58,18 +58,6 @@ $(document).ready(function() {
         }
     }
 
-
-    //  重载导航因为pjax失焦事件
-    function nav_click_active() {
-        var nav_li = $('#navbar-nav li')
-        nav_li.on('click', function() {
-            nav_li.each(function() {
-                $(this).removeClass('active');
-            })
-            $(this).addClass('active')
-        })
-    }
-
     //   Valine配置
     new Valine({
         el: '#vcomment',
@@ -118,15 +106,6 @@ $(document).ready(function() {
             }
         }
     });
-
-    // pjax配置
-    // $(document).pjax('a[target!=_blank]', '#pjax-container', {fragment:'#pjax-container', timeout:6000});    
-    // $(document).on('pjax:send', function() {
-    //     nav_click_active()
-    //   });
-    // $(document).on('pjax:end', function() {
-    //     public_bg_color();
-    //   });
 
 
 })

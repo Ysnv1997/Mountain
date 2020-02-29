@@ -1,10 +1,8 @@
-	<div class="container">
-		<div class="post-header">
-			{{#foreach authors}}{{name}}{{/foreach}}
-			<span class="date-divider">/</span>
-			<time datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time>
-			{{#if primary_tag}}<span class="date-divider">/</span>{{#primary_tag}}{{name}}{{/primary_tag}}{{/if}}
-			<span class="date-divider">/</span>
-			{{reading_time minute=(t "1分钟阅读") minutes=(t "%分钟阅读")}}
-		</div>
-	</div>
+<p class="post-header">
+	<span>{{#foreach authors}}{{name}}{{/foreach}}</span>
+	<span class="date-divider">/</span>
+	<time datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time>
+	{{#if primary_tag}}<span class="date-divider">/</span>{{#primary_tag}}<span>{{name}}</span>{{/primary_tag}}{{/if}}
+	<span class="date-divider">/</span>
+	<span>{{reading_time minute=(t "1分钟阅读") minutes=(t "%分钟阅读")}}</span>
+</p>
