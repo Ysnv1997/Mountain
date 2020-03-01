@@ -1,9 +1,11 @@
 {{!< default}}
 <!-- START: HOME -->
-<section class="section-home " id="home">
+<section class="section-home" id="home">
 	<div class="glass">
 		<h3>{{@site.title}}</h3>
-		
+		<p class="post-header">
+			{{@site.description}}
+		</p>
 		</div>
 	<img src="{{#if @site.cover_image}}{{@site.cover_image}}{{else}}{{asset '/images/banner.jpg'}}{{/if}}" id="full_img"
 		crossorigin="anonymous" />

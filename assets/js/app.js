@@ -9,55 +9,9 @@ var config = {
     GhostApi: '91c34e137ab452d7836f7fe976'
 }
 
-$(document).ready(function() {
-    function colorfulImg(imgEl) {
-        var blockSize = 5, // only visit every 5 pixels
-            canvas = document.createElement('canvas'),
-            context = canvas.getContext && canvas.getContext('2d'),
-            data, width, height,
-            i = -4,
-            length,
-            rgb = { r: 0, g: 0, b: 0 },
-            count = 0
-        if (!context) {
-            return false;
-        }
-        height = canvas.height = imgEl.naturalHeight || imgEl.offsetHeight || imgEl.height;
-        width = canvas.width = imgEl.naturalWidth || imgEl.offsetWidth || imgEl.width;
-        context.drawImage(imgEl, 0, 0);
-        try {
-            data = context.getImageData(0, 0, width, height);
-        } catch (e) {
-            return false;
-        }
-        length = data.data.length;
-        while ((i += blockSize * 4) < length) {
-            ++count;
-            rgb.r += data.data[i];
-            rgb.g += data.data[i + 1];
-            rgb.b += data.data[i + 2];
-        }
-        // ~~ used to floor values
-        rgb.r = ~~(rgb.r / count);
-        rgb.g = ~~(rgb.g / count);
-        rgb.b = ~~(rgb.b / count);
-        if (rgb.r == 0 && rgb.g == 0 && rgb.b == 0) return false;
-        return rgb;
-    }
-    // 根据图片替换网站颜色
-    var full_img = document.getElementById('full_img')
-    if (full_img) {
-        var full_rgb = colorfulImg(full_img)
-        if (full_rgb) {
-            var rgb = 'rgb(' + full_rgb.r + ',' + full_rgb.g + ',' + full_rgb.b + ')',
-                p = 15,
-                rgbp = 'rgb(' + full_rgb.r + p + ',' + full_rgb.g + p + ',' + full_rgb.b + p + ')',
-
-                linear_gradient = "linear-gradient(135deg, " + rgb + " 0%, " + rgbp + " 100%)"
-            $('body').css("background", linear_gradient);
-        }
-    }
-
+$(document).ready(function () {
+    // 根据图片生成body渐变色
+    Grade(document.querySelectorAll('.gradient-wrap'),'#full_img',null)
     //   Valine配置
     new Valine({
         el: '#vcomment',
@@ -89,7 +43,7 @@ $(document).ready(function() {
                 fields: ['title', 'published_at', 'url']
             }
         },
-        template: function(results) {
+        template: function (results) {
             const time = parseTime(new Date(results.published_at), '{y}-{m}-{d}');
             return '' +
                 '<a href="' + results.url + '" class="ghost-search-item">' +
@@ -98,7 +52,7 @@ $(document).ready(function() {
                 '</a>';
         },
         on: {
-            afterDisplay: function(result) {
+            afterDisplay: function (result) {
                 const mate = $('.search-meta');
                 let text = mate.attr('data-no-results-text');
                 text = text.replace('[results]', result.total);
