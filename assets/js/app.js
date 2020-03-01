@@ -6,13 +6,13 @@ var config = {
         notify: false, // 邮件提醒!!! 默认为 false，启动请参考：https://github.com/xCss/Valine/wiki/Valine-%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E9%82%AE%E4%BB%B6%E6%8F%90%E9%86%92%E8%AE%BE%E7%BD%AE
         verify: false //是否开启评论验证码
     },
-    GhostApi: '91c34e137ab452d7836f7fe976'
+    GhostApi: '1047ab24382f22d28d8ec07103'
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
     // 根据图片生成body渐变色
-    Grade(document.querySelectorAll('.gradient-wrap'),'#full_img',null)
-    //   Valine配置
+    Grade(document.querySelectorAll('.gradient-wrap'), '#full_img', null)
+        //   Valine配置
     new Valine({
         el: '#vcomment',
         appId: config.Valine.appId,
@@ -29,10 +29,10 @@ $(document).ready(function () {
     // 初始化
     // eslint-disable-next-line no-undef
     new GhostSearch({
-        host: [location.protocol, '//', location.host].join(''),
+        host: 'http://ghost.ishanran.com', //[location.protocol, '//', location.host].join('')
         version: 'v3',
         key: config.GhostApi,
-        url: [location.protocol, '//', location.host].join(''),
+        url: 'http://ghost.ishanran.com', //[location.protocol, '//', location.host].join('')
         trigger: 'focus',
         defaultValue: '',
         options: {
@@ -43,7 +43,7 @@ $(document).ready(function () {
                 fields: ['title', 'published_at', 'url']
             }
         },
-        template: function (results) {
+        template: function(results) {
             const time = parseTime(new Date(results.published_at), '{y}-{m}-{d}');
             return '' +
                 '<a href="' + results.url + '" class="ghost-search-item">' +
@@ -52,7 +52,7 @@ $(document).ready(function () {
                 '</a>';
         },
         on: {
-            afterDisplay: function (result) {
+            afterDisplay: function(result) {
                 const mate = $('.search-meta');
                 let text = mate.attr('data-no-results-text');
                 text = text.replace('[results]', result.total);
