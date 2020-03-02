@@ -1,14 +1,13 @@
 {{!< default}}
 {{#post}}
 <!-- START: HOME -->
-<section class="section-home " id="home">
+<section class="section-home " id="post">
 	<div class="glass post">
 		<h3>{{title}}</h3>
 		{{> post-info}}
 	</div>
 
-	<img src="{{#if feature_image}}{{img_url feature_image size="m"}}{{else}}{{asset "/images/banner.jpg"}}{{/if}}"
-		id="full_img" crossorigin="anonymous" />
+	<img id="full_img" src="{{#if feature_image}}{{img_url feature_image}}{{else}}{{asset "/images/banner.jpg"}}{{/if}}" crossorigin="anonymous" />
 </section>
 <!-- END: HOME -->
 <!-- START: CONTACT -->

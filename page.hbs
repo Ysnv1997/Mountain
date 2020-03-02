@@ -3,10 +3,10 @@
 <!-- START: HOME -->
 <section class="section-home " id="home">
 	<div class="glass">
-		<h3><{{@site.title}}/h3>
+		<h3>{{@site.title}}</h3>
 		
 		</div>
-	<img src="{{#if feature_image}}{{img_url feature_image size="m"}}{{else}}{{asset "/images/banner.jpg"}}{{/if}}"
+	<img src="{{#if feature_image}}{{img_url feature_image}}{{else}}{{asset "/images/banner.jpg"}}{{/if}}"
 		id="full_img" crossorigin="anonymous" />
 </section>
 <!-- END: HOME -->

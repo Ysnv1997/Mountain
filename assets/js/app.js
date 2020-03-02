@@ -10,8 +10,6 @@ var config = {
 }
 
 $(document).ready(function() {
-    // 根据图片生成body渐变色
-    Grade(document.querySelectorAll('.gradient-wrap'), '#full_img', null)
         //   Valine配置
     new Valine({
         el: '#vcomment',
@@ -56,4 +54,9 @@ $(document).ready(function() {
     });
 
 
+})
+
+
+window.addEventListener('load', function(){
+    Grade(document.querySelectorAll('.gradient-wrap'),'#full_img');
 })
