@@ -21,13 +21,7 @@ $(document).ready(function() {
         notify: config.Valine.notify,
         verify: config.Valine.verify
     })
-
-
-
-    //搜索配置
-
-    // 初始化
-    // eslint-disable-next-line no-undef
+    // ghost 搜索配置
     new GhostSearch({
         host: 'http://ghost.ishanran.com', //[location.protocol, '//', location.host].join('')
         version: 'v3',
