@@ -37,3 +37,5 @@ dome:[www.ishanran.com](http://www.ishanran.com)
         }
     ```
 3. 上传至Ghost即可
+## 使用说明
+本站由于调用了grade插件，如果你的站要开启cdn/oss云储存，请配置cdn/oss允许跨域请求`Access-Control-Allow-Origin:*`,否则无法根据图片更换body颜色。
