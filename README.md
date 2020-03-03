@@ -23,6 +23,6 @@ dome:[www.ishanran.com](http://www.ishanran.com)
 暂时就是这些，还有个友情链接和关于我页面没写好，实在是没有好的ider了！得好好构思一下，不然破坏了整体风格那就没意思了。
 
 ## 使用教程
-1. 下载[releases](/releases)包
+1. 下载[releases](https://github.com/Ysnv1997/Mountain/releases)包
 2. 修改 assets/js/app.js内容：`config`中的内容，对应填写即可
 3. 上传至Ghost即可
