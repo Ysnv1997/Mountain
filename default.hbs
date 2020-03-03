@@ -104,7 +104,11 @@
 	<!-- app Js -->
 	<script src="{{asset "/js/app.js"}}"></script>
 
-
+	<script>
+		window.addEventListener('load', function(){
+			Grade(document.querySelectorAll('.gradient-wrap'),'#full_img');
+		})
+	</script>
 	{{!-- 用户自定义脚本 --}}
 	{{{block "scripts"}}}
 

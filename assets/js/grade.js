@@ -14,8 +14,7 @@ var Grade = function () {
         this.callback = callback || null;
         this.container = container;
         this.image = this.container.querySelector(img_selector) || this.container.querySelector('img');
-        console.log(this.image);
-        
+        this.image.crossOrigin = "anonymous";
         this.gradientData = [];
         if (!this.image || !this.container) {
             return;
@@ -115,11 +114,6 @@ var Grade = function () {
         value: function getTextProperty(top) {
             var rgb = this.getMiddleRGB(top[0].rgba.slice(0, 3), top[1].rgba.slice(0, 3));
             var o = Math.round((parseInt(rgb[0]) * 299 + parseInt(rgb[1]) * 587 + parseInt(rgb[2]) * 114) / 1000);
-            if (o > 125) {
-                return 'color: #000';
-            } else {
-                return 'color: #fff';
-            }
         }
     }, {
         key: 'getTopValues',

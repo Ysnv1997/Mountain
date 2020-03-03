@@ -55,8 +55,3 @@ $(document).ready(function() {
 
 
 })
-
-
-window.addEventListener('load', function(){
-    Grade(document.querySelectorAll('.gradient-wrap'),'#full_img');
-})
