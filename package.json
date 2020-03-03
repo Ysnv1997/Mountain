@@ -1,13 +1,13 @@
 {
-    "name": "shanran",
-    "description": "A brief explanation of your theme",
-    "version": "0.5.0",
+    "name": "Mountain",
+    "description": "一个免费公开的Ghost主题",
+    "version": "1.0.0",
     "engines": {
         "ghost-api": "v3"
     },
     "license": "MIT",
     "author": {
-        "email": "your@email.here"
+        "email": "htm@htm.fun"
     },
     "config": {
         "posts_per_page": 3,

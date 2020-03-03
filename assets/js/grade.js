@@ -33,7 +33,7 @@ var Grade = function () {
         key: 'readImage',
         value: function readImage() {
             this.imageDimensions.width = this.image.width * 0.1;
-            this.imageDimensions.height = this.image.height * 0.1;
+            this.imageDimensions.height = this.image.height * 0.8;
             this.render();
         }
     }, {
