@@ -25,4 +25,15 @@ dome:[www.ishanran.com](http://www.ishanran.com)
 ## 使用教程
 1. 下载[releases](https://github.com/Ysnv1997/Mountain/releases)包
 2. 修改 assets/js/app.js内容：`config`中的内容，对应填写即可
+    ```
+    var config = {
+    Valine: {
+                appId: 'r5Ex9Rj9hflHjRACQWPk5DJT-gzGzoHsz', //Valine appId 参考https://valine.js.org/quickstart.html#%E9%85%8D%E7%BD%AE
+                appKey: 'y7MryUHGzDTvyBGiWjkV6tyB', //Valine appKey
+                notify: false, // 邮件提醒!!! 默认为 false，启动请参考：https://github.com/xCss/Valine/wiki/Valine-%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E9%82%AE%E4%BB%B6%E6%8F%90%E9%86%92%E8%AE%BE%E7%BD%AE
+                verify: false //是否开启评论验证码
+            },
+            GhostApi: '1047ab24382f22d28d8ec07103' //ghost 后台Integrations 新建CUSTOM INTEGRATIONS  获取api
+        }
+    ```
 3. 上传至Ghost即可
