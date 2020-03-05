@@ -53,6 +53,15 @@ $(document).ready(function() {
             }
         }
     });
-
+    // 首页毒鸡汤
+    $.ajax({
+        type: 'get',
+        url: 'https://v1.alapi.cn/api/soul',
+        dataType: "json",
+        success: function (response) {
+            var text_content = response.data.title;
+            $('#index_djt').text(text_content)
+        }
+    });
 
 })
