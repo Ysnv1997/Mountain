@@ -17,7 +17,8 @@ $(document).ready(function() {
         appKey: config.Valine.appKey,
         placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
         notify: config.Valine.notify,
-        verify: config.Valine.verify
+        verify: config.Valine.verify,
+        avatar:'monsterid',
     })
     // ghost 搜索配置
     new GhostSearch({
