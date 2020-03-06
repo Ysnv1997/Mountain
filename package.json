@@ -1,5 +1,5 @@
 {
-    "name": "Mountain",
+    "name": "mountain",
     "description": "一个免费公开的Ghost主题",
     "version": "1.0.0",
     "engines": {
@@ -9,6 +9,7 @@
     "author": {
         "email": "htm@htm.fun"
     },
+    "keywords": ["ghost-theme","山然小站"],
     "config": {
         "posts_per_page": 3,
         "image_sizes": {
