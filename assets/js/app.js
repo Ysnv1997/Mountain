@@ -9,8 +9,8 @@ var config = {
     GhostApi: '1047ab24382f22d28d8ec07103'
 }
 
-$(document).ready(function() {
-        //   Valine配置
+$(document).ready(function () {
+    //   Valine配置
     new Valine({
         el: '#vcomment',
         appId: config.Valine.appId,
@@ -18,7 +18,7 @@ $(document).ready(function() {
         placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
         notify: config.Valine.notify,
         verify: config.Valine.verify,
-        avatar:'monsterid',
+        avatar: 'monsterid',
     })
     // ghost 搜索配置
     new GhostSearch({
@@ -36,7 +36,7 @@ $(document).ready(function() {
                 fields: ['title', 'published_at', 'url']
             }
         },
-        template: function(results) {
+        template: function (results) {
             const time = parseTime(new Date(results.published_at), '{y}-{m}-{d}');
             return '' +
                 '<a href="' + results.url + '" class="ghost-search-item">' +
@@ -45,7 +45,7 @@ $(document).ready(function() {
                 '</a>';
         },
         on: {
-            afterDisplay: function(result) {
+            afterDisplay: function (result) {
                 const mate = $('.search-meta');
                 let text = mate.attr('data-no-results-text');
                 text = text.replace('[results]', result.total);
@@ -63,5 +63,4 @@ $(document).ready(function() {
             $('#index_djt').text(text_content)
         }
     });
-
 })

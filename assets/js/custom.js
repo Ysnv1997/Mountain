@@ -111,20 +111,6 @@ function parseTime(time, cFormat) {
     /* ---------------------------------------------- */
     //$('.kg-image').magnificPopup({type:'image'});
 
-    /* ---------------------------------------------- /*
-    * Swipper - Init
-    /* ---------------------------------------------- */
-
-    // Testimony init
-
-    var swipertest = new Swiper('.swiper-testimony', {
-        spaceBetween: 30,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-
 
     /* ---------------------------------------------- /*
     * AnimateOnScroll - Init
