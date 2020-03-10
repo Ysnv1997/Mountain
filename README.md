@@ -5,7 +5,7 @@
 
 ## Mountain
 Mountain是我的第一个Ghost主题，中文名`山`，还算是一款比较惊艳的双栏主题。先让我们来看看它吧！
-dome:[www.ishanran.com](http://www.ishanran.com)
+Demo:[www.ishanran.com](http://www.ishanran.com)
 
 ## 开发进度
 1. 首页
@@ -38,4 +38,5 @@ dome:[www.ishanran.com](http://www.ishanran.com)
     ```
 3. 上传至Ghost即可
 ## 使用说明
-本站由于调用了grade插件，如果你的站要开启cdn/oss云储存，请配置cdn/oss允许跨域请求`Access-Control-Allow-Origin:*`,否则无法根据图片更换body颜色。
+1. 本站由于调用了grade插件，如果你的站要开启cdn/oss云储存，请配置cdn/oss允许跨域请求`Access-Control-Allow-Origin:*`,否则无法根据图片更换body颜色。
+2. 如果你开启了全站CDN，请修改`assets/js/app.js`中25行与28行`[location.protocol, '//', location.host].join('')`改为你的回源域名。

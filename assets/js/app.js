@@ -22,10 +22,10 @@ $(document).ready(function () {
     })
     // ghost 搜索配置
     new GhostSearch({
-        host: 'http://ghost.ishanran.com', //[location.protocol, '//', location.host].join('')
+        host: [location.protocol, '//', location.host].join(''),
         version: 'v3',
         key: config.GhostApi,
-        url: 'http://ghost.ishanran.com', //[location.protocol, '//', location.host].join('')
+        url: [location.protocol, '//', location.host].join(''),
         trigger: 'focus',
         defaultValue: '',
         options: {
